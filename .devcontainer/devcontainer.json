@@ -1,0 +1,6 @@
+{
+    // shinyhelper depends on r-cran-commonmark, r-cran-markdown, r-cran-xfun
+    // r-cran-bit, r-cran-bit64 are dependencies of hdf5r
+    "onCreateCommand": "sudo apt update && sudo apt install -y --no-install-recommends libhdf5-dev r-cran-bit r-cran-bit64 r-cran-commonmark r-cran-markdown r-cran-xfun r-cran-dt r-cran-ggdendro r-cran-readr r-cran-seurat r-cran-r.utils && sudo Rscript -e 'install.packages(c(\"shinyhelper\", \"hdf5r\"))' && sudo R CMD INSTALL ."
+    
+}
